@@ -1,0 +1,27 @@
+﻿@page "/ocr"
+
+
+<h1>Upload files!</h1>
+
+
+
+
+<MudGrid>
+    <MudItem xs="12" sm="12" md="6">
+        <MudPaper>
+            <div @ref="dropZoneElement" class="drop-zone">
+                <p>Drop a file or paste an image from the clipboard or select a file using the input</p>
+                <InputFile OnChange="@OnChange" @ref="inputFile" />
+            </div>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="12" sm="12" md="6">
+        <MudPaper>
+            <MudTextField @onfocus="CopyText" @bind-Value="Output" Label="Output" Variant="Variant.Text" Margin="Margin.Dense" Lines="15" Class="px-2" ReadOnly="true" />
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+
+

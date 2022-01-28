@@ -1,0 +1,23 @@
+﻿@page "/markdown"
+
+<MudContainer Class="mt-2 px-12" MaxWidth="MaxWidth.False">
+    <MudText Typo="Typo.h3" Align="Align.Center">MarkDown Viewer</MudText>
+
+    <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+        <MudTabPanel Text="Write">
+            <MudItem xs="12" sm="12" md="12">
+                <MudPaper>
+                    <MudTextField @bind-Value="Input" Immediate="true" Label="Input" Variant="Variant.Text" Margin="Margin.Dense" Lines="14" Class="px-2"/>
+                </MudPaper>
+            </MudItem>
+        </MudTabPanel>
+        <MudTabPanel Text="Preview">
+            <MudItem xs="12" sm="12" md="12">
+                <MudPaper Class="px-2" Style="min-height: 296px">
+                    @((MarkupString) Output)
+                </MudPaper>
+            </MudItem>
+        </MudTabPanel>
+    </MudTabs>
+
+</MudContainer>

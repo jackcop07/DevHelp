@@ -1,0 +1,9 @@
+<svg width="456" height="456" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="#000000" height="456" width="456" y="0" x="0"/>
+  <text transform="matrix(5.95181 0 0 6.22431 -259.687 -344.962)" stroke="null" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_5" y="82.8" x="48" fill="#00ffff">Dev</text>
+  <text transform="matrix(5.80154 0 0 5.45821 -499.36 -1093.87)" stroke="null" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_6" y="261.30369" x="112.79077" fill="#00ffff">Help</text>
+ </g>
+</svg>
